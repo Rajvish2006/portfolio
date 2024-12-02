@@ -1,0 +1,230 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 55px;
+    width: 100vw;
+    background-color: #fffcfc;
+    position: sticky;
+    top: 0;
+
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 23px;
+}
+
+.navbar nav div {
+    flex-basis: 50%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+}
+.menu-toggle{
+    display: none
+}
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navbar a {
+      margin: 5px 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      position: relative;
+    }
+    .navbar a {
+      display: none;
+    }
+    .navbar.active a {
+      display: block;
+    }
+    
+  }
+
+
+
+
+.contain {
+    margin-top: 20px;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.container1 {
+
+    width: 40%;
+    background-color: rgb(230, 218, 206);
+    flex-basis: 40%;
+}
+
+.container2 {
+    height: 83%;
+    width: 56%;
+    /* background-color: rgb(247, 12, 12); */
+    position: absolute;
+    top: 49px;
+    left: 20%;
+    display: flex;
+    box-shadow: 0px 0px 17px -2px #8f7c7c;
+
+}
+
+.pic {
+    height: 100%;
+    width: 45%;
+    background-color: #f4ece6;
+    position: relative;
+    box-shadow: 0px 0px  17px -5px #8f7c7c;
+    border-radius: 5px;
+
+}
+
+.pic .profile-img {
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    margin: 35px auto;
+    border-radius: 50%;
+    background:url(https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pic hr {
+    width: 30%;
+    height: 1.3px;
+    margin: 5px auto;
+    background-color: blue;
+
+}
+
+.pic h2,
+.pic h3 {
+    text-align: center;
+}
+
+.pic .ion {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+}
+
+.pic .ion .ic i {
+    font-size: 2rem;
+}
+
+.profile-text {
+    width: 55%;
+    padding: 0 13px;
+}
+
+.profile-text h1 {
+    font-size: 5rem;
+}
+.profile-text p{
+   margin: 15px 0px;
+   font-size: 14px;
+    /* background-color: orange; */
+}
+
+button {
+    width: 135px;
+    border-radius: 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 10px;
+}
+
+.b1 {
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+}
+
+.b2 {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.b1:hover {
+    background-color: transparent;
+    border: 1px solid blue;
+    color: black;
+}
+
+.b2:hover {
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+}
+
+.f1 ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.f1 ul li {
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.f1 {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+#fa {
+    margin-top: 30px;
+    font-size: 20px;
+    height: 100px;
+    width: 65%;
+    list-style-type: none;
+}
+
+.ic li {
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+
+
+nav ul li a:hover {
+    color: blue;
+}
